@@ -1,0 +1,17 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - Bandura Monitor</title>
+    {% else %}
+    <title>Welcome to Bandura Monitor</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Bandura Monitor: 
+      <a href="/index">Home</a>
+      <a href="/login">Log In</a>
+    </div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
